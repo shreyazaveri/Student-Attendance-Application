@@ -12,10 +12,6 @@
         "source": "E:\\flutter apps\\attendance\\app\\src\\main\\res\\layout\\test_main.xml"
     },
     {
-        "merged": "E:\\flutter apps\\attendance\\app\\build\\intermediates\\res\\merged\\debug\\layout_del_student.xml.flat",
-        "source": "E:\\flutter apps\\attendance\\app\\src\\main\\res\\layout\\del_student.xml"
-    },
-    {
         "merged": "E:\\flutter apps\\attendance\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_cl.jpg.flat",
         "source": "E:\\flutter apps\\attendance\\app\\src\\main\\res\\drawable-hdpi\\cl.jpg"
     },

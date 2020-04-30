@@ -25,7 +25,12 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -43,16 +48,19 @@
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-04-22T13:23:05.727Z" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="device.picker.selection" value="0e8590330005" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
+    <property name="last_opened_file_path" value="F:/Mummy" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\flutter apps\attendance\app\src\main\res\layout" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.android.attendance.activity" />
+    </key>
+    <key name="android.template.packageName">
+      <recent name="com.android.attendance.activity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\flutter apps\attendance\app\src\main\res\layout" />
     </key>
   </component>
   <component name="RunDashboard">

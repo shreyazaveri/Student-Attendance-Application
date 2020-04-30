@@ -18,10 +18,10 @@ import android.widget.Button;
 public class MenuActivity extends Activity {
 
 	Button addStudent;
-	Button delStudent;
 	Button addFaculty;
 	Button viewStudent;
 	Button viewFaculty;
+	Button delStudent;
 	Button logout;
 	Button attendancePerStudent;
 
@@ -46,7 +46,7 @@ public class MenuActivity extends Activity {
 				startActivity(intent);
 			}
 		});
-		
+
 		addFaculty.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -57,7 +57,13 @@ public class MenuActivity extends Activity {
 				startActivity(intent);
 			}
 		});
-
+		delStudent.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(MenuActivity.this,DelStudentActivity.class);
+				startActivity(intent);
+			}
+		});
 		viewFaculty.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -65,16 +71,6 @@ public class MenuActivity extends Activity {
 				// TODO Auto-generated method stub
 
 				Intent intent =new Intent(MenuActivity.this,ViewFacultyActivity.class);
-				startActivity(intent);
-			}
-		});
-		delStudent.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-
-				Intent intent =new Intent(MenuActivity.this,DelStudentActivity.class);
 				startActivity(intent);
 			}
 		});
@@ -103,20 +99,20 @@ public class MenuActivity extends Activity {
 		});
 		attendancePerStudent=(Button)findViewById(R.id.attendancePerStudentButton);
 		attendancePerStudent.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View arg0) {
-				
+
 				DBAdapter dbAdapter = new DBAdapter(MenuActivity.this);
 				ArrayList<AttendanceBean> attendanceBeanList=dbAdapter.getAllAttendanceByStudent();
 				((ApplicationContext)MenuActivity.this.getApplicationContext()).setAttendanceBeanList(attendanceBeanList);
-				
+
 				Intent intent = new Intent(MenuActivity.this,ViewAttendancePerStudentActivity.class);
 				startActivity(intent);
-				
+
 			}
 		});
-		
+
 
 	}
 

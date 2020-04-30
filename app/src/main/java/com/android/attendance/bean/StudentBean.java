@@ -12,6 +12,9 @@ public class StudentBean {
 	public int getStudent_id() {
 		return student_id;
 	}
+	public int getStudent_id1(int id) {
+		return student_id;
+	}
 	public void setStudent_id(int student_id) {
 		this.student_id = student_id;
 	}
