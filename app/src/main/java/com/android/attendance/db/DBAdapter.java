@@ -510,7 +510,8 @@ public class DBAdapter extends SQLiteOpenHelper {
 		Log.d("query", query);
 		
 		Cursor cursor = db.rawQuery(query, null);
-		
+
+
 		
 
 		if(cursor.moveToFirst()) 

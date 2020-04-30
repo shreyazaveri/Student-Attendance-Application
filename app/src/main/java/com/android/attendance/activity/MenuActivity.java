@@ -18,6 +18,7 @@ import android.widget.Button;
 public class MenuActivity extends Activity {
 
 	Button addStudent;
+	Button delStudent;
 	Button addFaculty;
 	Button viewStudent;
 	Button viewFaculty;
@@ -34,7 +35,7 @@ public class MenuActivity extends Activity {
 		viewStudent =(Button)findViewById(R.id.buttonViewstudent);
 		viewFaculty =(Button)findViewById(R.id.buttonviewfaculty);
 		logout =(Button)findViewById(R.id.buttonlogout);
-		
+		delStudent=(Button)findViewById(R.id.delStduent);
 		addStudent.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -56,7 +57,7 @@ public class MenuActivity extends Activity {
 				startActivity(intent);
 			}
 		});
-		
+
 		viewFaculty.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -64,6 +65,16 @@ public class MenuActivity extends Activity {
 				// TODO Auto-generated method stub
 
 				Intent intent =new Intent(MenuActivity.this,ViewFacultyActivity.class);
+				startActivity(intent);
+			}
+		});
+		delStudent.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+
+				Intent intent =new Intent(MenuActivity.this,DelStudentActivity.class);
 				startActivity(intent);
 			}
 		});

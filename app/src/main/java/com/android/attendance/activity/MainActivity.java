@@ -20,9 +20,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
 		setContentView(R.layout.activity_main);
 
 		start =(Button)findViewById(R.id.buttonstart);
-		ab=(Button)findViewById(R.id.abt);
 		start.setOnClickListener(this);
-		ab.setOnClickListener(this);
 
 	}
 
@@ -40,13 +38,6 @@ public class MainActivity extends Activity implements View.OnClickListener{
 		{
 			Intent i=new Intent(MainActivity.this,LoginActivity.class);
 			startActivity(i);
-
-		}
-		else if(view.getId()==R.id.abt)
-		{
-			Intent i=new Intent(MainActivity.this,Aboutus.class);
-			startActivity(i);
-
 
 		}
 	}
